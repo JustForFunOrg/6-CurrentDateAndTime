@@ -1,2 +1,2 @@
-# 6-CurrentDateAndTime
+# 6 - Current Date And Time
 samvlu.com
