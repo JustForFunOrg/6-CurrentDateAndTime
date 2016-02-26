@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15E33e" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="CurrentDateAndTime" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current date and time" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="juw-Ad-GPp">
+                                <rect key="frame" x="200" y="243" width="200" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="m5p-8p-j9j"/>
+                                    <constraint firstAttribute="height" constant="21" id="uXv-6M-LCf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YbY-MQ-eCN">
+                                <rect key="frame" x="258" y="279" width="82.5" height="42"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="35"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Ef-xC-hBO">
+                                <rect key="frame" x="214" y="331" width="173" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="173" id="6zx-Zz-DDc"/>
+                                    <constraint firstAttribute="height" constant="40" id="XxH-5W-nf5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Refresh"/>
+                                <connections>
+                                    <action selector="refreshButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2rK-NR-IPc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="9Ef-xC-hBO" firstAttribute="top" secondItem="YbY-MQ-eCN" secondAttribute="bottom" constant="10" id="DXn-Ui-QnM"/>
+                            <constraint firstItem="YbY-MQ-eCN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Myv-gX-M9o"/>
+                            <constraint firstItem="juw-Ad-GPp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OrZ-7G-dCx"/>
+                            <constraint firstItem="YbY-MQ-eCN" firstAttribute="top" secondItem="juw-Ad-GPp" secondAttribute="bottom" constant="15" id="e7h-0S-ObD"/>
+                            <constraint firstItem="9Ef-xC-hBO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rp4-c8-jBs"/>
+                            <constraint firstItem="YbY-MQ-eCN" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="saH-JL-RZt"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="currentDateAndTimeLabel" destination="YbY-MQ-eCN" id="b1p-jl-S9q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="357"/>
+        </scene>
+    </scenes>
+</document>
